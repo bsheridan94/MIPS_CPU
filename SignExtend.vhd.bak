@@ -11,6 +11,5 @@ port(
 end SignExtend;
 
 ARCHITECTURE behavorial of SignExtend is
-begin
   y <= std_logic_Vector(resize(signed(x), y'length));
 end behavorial;

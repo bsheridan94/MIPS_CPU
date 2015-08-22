@@ -10,8 +10,10 @@ end ShiftLeft2;
 architecture behavorial of ShiftLeft2 is
   
   
-begin 
---x <= to_bitvector(x);
---y <= x sll 2;
---y <= to_stdlogicvector(y);  
+begin
+  
+x <= to_bitvector(x);
+y <= x sll 2;
+y <= to_stdlogicvector(y);  
+  
 end behavorial;

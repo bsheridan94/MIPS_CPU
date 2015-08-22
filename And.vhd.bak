@@ -2,9 +2,11 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity AndGate is 
-  port(inA, inB:in  STD_LOGIC;
+  generic(n: natural :=1);
+  port(inA:in  STD_LOGIC;
+       inB:in  STD_LOGIC;
        output:out  STD_LOGIC);
-    end AndGate;
+    end And;
     
     
 architecture behavioral of AndGate is
