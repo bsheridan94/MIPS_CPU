@@ -17,7 +17,7 @@ L5
 VWfOPYD>oj:AYkO23LOgMW0
 Z8 OV;C;10.1d;51
 32
-Z9 !s108 1440012104.539864
+Z9 !s108 1440536365.842524
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/brian/project/ECEC355/MipsCPU/ALUControl.vhd|
 Z11 !s107 /home/brian/project/ECEC355/MipsCPU/ALUControl.vhd|
 Z12 o-work work -2002 -explicit -O0
@@ -54,7 +54,7 @@ L4
 V?6n4EZaC07kHNK>YJX3H63
 R8
 32
-Z17 !s108 1440012103.097689
+Z17 !s108 1440536365.648138
 Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/brian/project/ECEC355/MipsCPU/And.vhd|
 Z19 !s107 /home/brian/project/ECEC355/MipsCPU/And.vhd|
 R12
@@ -90,7 +90,7 @@ L5
 VcI5L[Agk_EHTL7P5?E?`G1
 R8
 32
-Z24 !s108 1440012104.481201
+Z24 !s108 1440536365.735481
 Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/brian/project/ECEC355/MipsCPU/Control.vhd|
 Z26 !s107 /home/brian/project/ECEC355/MipsCPU/Control.vhd|
 R12
@@ -114,6 +114,26 @@ R12
 R13
 !s100 IHo]aVgFdVXVF_0jLlEZD3
 !i10b 1
+Einstructionmemory
+w1440536371
+R1
+R3
+R4
+R5
+8/home/brian/project/ECEC355/MipsCPU/InstructionMemory.vhd
+F/home/brian/project/ECEC355/MipsCPU/InstructionMemory.vhd
+l0
+L5
+VOoU24I0?@AJJkbBHR`j850
+!s100 znLU9LLNdUFB;K6<[>H]z3
+R8
+32
+!i10b 1
+!s108 1440536371.382655
+!s90 -reportprogress|300|-work|work|-2002|-explicit|/home/brian/project/ECEC355/MipsCPU/InstructionMemory.vhd|
+!s107 /home/brian/project/ECEC355/MipsCPU/InstructionMemory.vhd|
+R12
+R13
 Ememory
 Z27 w1439711309
 Z28 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
@@ -128,7 +148,7 @@ L12
 V7Q<d3`?_ThzU[BU==JdZ]3
 R8
 32
-Z31 !s108 1440012104.575743
+Z31 !s108 1440536365.879576
 Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/brian/project/ECEC355/MipsCPU/memory.vhd|
 Z33 !s107 /home/brian/project/ECEC355/MipsCPU/memory.vhd|
 R12
@@ -144,7 +164,6 @@ DEx4 work 6 memory 0 22 7Q<d3`?_ThzU[BU==JdZ]3
 l59
 L21
 V8ESPlmQjiaY=bPYczko@D1
-!s100 HK:NEP5go]cc?P8@bXPi>1
 R8
 32
 R31
@@ -152,9 +171,10 @@ R32
 R33
 R12
 R13
+!s100 HK:NEP5go]cc?P8@bXPi>1
 !i10b 1
 Emux
-Z34 w1439755849
+Z34 w1440536364
 R3
 R4
 R5
@@ -165,7 +185,7 @@ L4
 VoWg1g<3`KLKnmTKQ2Hfa12
 R8
 32
-Z37 !s108 1440012102.961564
+Z37 !s108 1440536364.956208
 Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/brian/project/ECEC355/MipsCPU/Mux.vhd|
 Z39 !s107 /home/brian/project/ECEC355/MipsCPU/Mux.vhd|
 R12
@@ -186,7 +206,7 @@ R38
 R39
 R12
 R13
-!s100 U3XOdH13G4hF?L<Zj8]BS2
+!s100 P>;0Y`XBGj=`Z[;3ESR523
 !i10b 1
 Eregisters
 Z40 w1440009561
@@ -201,49 +221,49 @@ Z42 F/home/brian/project/ECEC355/MipsCPU/Registers.vhd
 l0
 L7
 V4MTd@iZX^U7dlM?X`j[>j2
-!s100 :5NS12@i8LDMU@fRXhg3T2
 R8
 32
-!i10b 1
-Z43 !s108 1440012104.610252
+Z43 !s108 1440536365.968240
 Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/brian/project/ECEC355/MipsCPU/Registers.vhd|
 Z45 !s107 /home/brian/project/ECEC355/MipsCPU/Registers.vhd|
 R12
 R13
+!s100 :5NS12@i8LDMU@fRXhg3T2
+!i10b 1
 Abehavioral
 R21
 R1
 R2
 R3
 R4
-Z46 DEx4 work 9 registers 0 22 4MTd@iZX^U7dlM?X`j[>j2
+DEx4 work 9 registers 0 22 4MTd@iZX^U7dlM?X`j[>j2
 l17
 L15
-Z47 VN2?][X;1Gg^:<MiMXggeZ1
-Z48 !s100 Da;GnMD?HMhV_VRV;oghh1
+VN2?][X;1Gg^:<MiMXggeZ1
+!s100 Da;GnMD?HMhV_VRV;oghh1
 R8
 32
-!i10b 1
 R43
 R44
 R45
 R12
 R13
+!i10b 1
 Eshiftleft2
-Z49 w1440007976
+Z46 w1440007976
 R3
 R4
 R5
-Z50 8/home/brian/project/ECEC355/MipsCPU/ShiftLeft2.vhd
-Z51 F/home/brian/project/ECEC355/MipsCPU/ShiftLeft2.vhd
+Z47 8/home/brian/project/ECEC355/MipsCPU/ShiftLeft2.vhd
+Z48 F/home/brian/project/ECEC355/MipsCPU/ShiftLeft2.vhd
 l0
 L5
 V8WFIIj^@5=1[Lhmf<:bjR0
 R8
 32
-Z52 !s108 1440012103.066585
-Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/brian/project/ECEC355/MipsCPU/ShiftLeft2.vhd|
-Z54 !s107 /home/brian/project/ECEC355/MipsCPU/ShiftLeft2.vhd|
+Z49 !s108 1440536365.589631
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/brian/project/ECEC355/MipsCPU/ShiftLeft2.vhd|
+Z51 !s107 /home/brian/project/ECEC355/MipsCPU/ShiftLeft2.vhd|
 R12
 R13
 !s100 @^Z6k84z@7U7iKnjIAFT81
@@ -257,31 +277,31 @@ L10
 V6AEG]m4f>>ggA2eQg4RJ91
 R8
 32
-R52
-R53
-R54
+R49
+R50
+R51
 R12
 R13
 !s100 20OHcz:X4EIC[<Zfm2k>^0
 !i10b 1
 Esignextend
-Z55 w1440007298
+Z52 w1440007298
 R21
 R1
 R2
 R3
 R4
 R5
-Z56 8/home/brian/project/ECEC355/MipsCPU/SignExtend.vhd
-Z57 F/home/brian/project/ECEC355/MipsCPU/SignExtend.vhd
+Z53 8/home/brian/project/ECEC355/MipsCPU/SignExtend.vhd
+Z54 F/home/brian/project/ECEC355/MipsCPU/SignExtend.vhd
 l0
 L7
 VXT?YPLiS0NN9W_mTkOV_X2
 R8
 32
-Z58 !s108 1440012103.000749
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/brian/project/ECEC355/MipsCPU/SignExtend.vhd|
-Z60 !s107 /home/brian/project/ECEC355/MipsCPU/SignExtend.vhd|
+Z55 !s108 1440536365.431335
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|/home/brian/project/ECEC355/MipsCPU/SignExtend.vhd|
+Z57 !s107 /home/brian/project/ECEC355/MipsCPU/SignExtend.vhd|
 R12
 R13
 !s100 h`g5NLA97V8d6VN69g8`G2
@@ -298,9 +318,9 @@ L13
 V<A=1b68h[MW4?[[9T>GdV1
 R8
 32
-R58
-R59
-R60
+R55
+R56
+R57
 R12
 R13
 !s100 Q6V<gOojUnOFB3A7F[?5j0
