@@ -11,18 +11,6 @@ end Add4PC;
  
 architecture Behavorial of Add4PC is
   begin
-    
--- process(PC)
- -- variable temp:integer;
- -- variable sum:integer;
-  
---  begin
-   
---  temp:=conv_integer(unsigned(PC));
- -- sum:=temp+4;
---  Output<=std_logic_vector(to_unsigned(sum, 32));
-    
---  end process;
-  
+     
 Output<=std_logic_vector( unsigned(PC) + 4 );
 end Behavorial;

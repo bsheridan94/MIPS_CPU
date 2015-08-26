@@ -24,5 +24,5 @@ architecture Behavorial of Add4PC is
     
 --  end process;
   
-Output<=PC + 4;
+Output<=std_logic_vector( unsigned(PC) + 4 );
 end Behavorial;
