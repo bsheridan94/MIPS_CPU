@@ -14,9 +14,5 @@ architecture behavorial of ShiftLeft2MergeWithPC is
  -- signal tempOut: bit_vector(31 downto 0);
  
 begin 
-  
 Output <= PC(31 downto 28) & Input & "00" ;
-
-
-
 end behavorial;

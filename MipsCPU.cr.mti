@@ -7,17 +7,6 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity Add4PC
 -- Compiling architecture Behavorial of Add4PC
 
-} {} {}} /home/brian/project/ECEC355/MipsCPU/Registers.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/Registers.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_SIGNED
--- Loading package NUMERIC_STD
--- Compiling entity Registers
--- Compiling architecture behavioral of registers
-
 } {} {}} /home/brian/project/ECEC355/MipsCPU/Add.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/Add.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -81,6 +70,14 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package NUMERIC_STD
 -- Compiling entity SignExtend
 -- Compiling architecture behavorial of SignExtend
+
+} {} {}} /home/brian/project/ECEC355/MipsCPU/ShiftLeft2MergeWithPC.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/ShiftLeft2MergeWithPC.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ShiftLeft2MergeWithPC
+-- Compiling architecture behavorial of ShiftLeft2MergeWithPC
 
 } {} {}} /home/brian/project/ECEC355/MipsCPU/ALU.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/ALU.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012

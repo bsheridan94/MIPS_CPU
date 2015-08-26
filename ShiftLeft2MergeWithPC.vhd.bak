@@ -15,7 +15,7 @@ architecture behavorial of ShiftLeft2MergeWithPC is
  
 begin 
   
-Output <= PC(31 downto 28) & Input & "00" 
+Output <= PC(31 downto 28) & Input & "00" ;
 
 
 
