@@ -99,7 +99,7 @@ begin
     
 
 if clk='1' and clk'event and regWrite='1' then
-  RegBank(to_integer(WriteReg))<=WriteData;
+  regBank(to_integer(unsigned(WriteReg)))<=WriteData;
 end if;
 
 if clk='0' and clk'event and regWrite='1' then

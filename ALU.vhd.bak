@@ -32,7 +32,6 @@ case ALUControl is
   -- SUB
   when "0110" =>
       ALUResult <= ReadData1 - ReadData2;
-  
   -- SET ON LESS THAN
   when "0111" =>
       if(ReadData1<ReadData2) then
@@ -47,6 +46,11 @@ case ALUControl is
                               
 end case;
 
+if(ReadData1=ReadData2) then
+  Zero <=1;
+else
+  Zero <=0;
+end if;
   
 end process;
   

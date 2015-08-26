@@ -74,14 +74,6 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity SignExtend
 -- Compiling architecture behavorial of SignExtend
 
-} {} {}} /home/brian/project/ECEC355/MipsCPU/ShiftLeft2MergeWithPC.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/ShiftLeft2MergeWithPC.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity ShiftLeft2MergeWithPC
--- Compiling architecture behavorial of ShiftLeft2MergeWithPC
-
 } {} {}} /home/brian/project/ECEC355/MipsCPU/ALU.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/ALU.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -91,6 +83,14 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity ALU
 -- Compiling architecture Behavorial of ALU
+
+} {} {}} /home/brian/project/ECEC355/MipsCPU/ShiftLeft2MergeWithPC.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/ShiftLeft2MergeWithPC.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ShiftLeft2MergeWithPC
+-- Compiling architecture behavorial of ShiftLeft2MergeWithPC
 
 } {} {}} /home/brian/project/ECEC355/MipsCPU/Mux.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/Mux.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
