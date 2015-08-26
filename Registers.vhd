@@ -97,13 +97,18 @@ begin
     initialize:=0;
   end if;
     
+
+if clk='1' and clk'event and regWrite='1' then
+  regBank(to_integer(unsigned(WriteReg)))<=WriteData;
+end if;
+
+if clk='0' and clk'event and regWrite='1' then
   ReadData1 <= (regBank(to_integer(unsigned(ReadReg1))));
-  ReadData1 <= (regBank(to_integer(unsigned(ReadReg2))));
+  ReadData2 <= (regBank(to_integer(unsigned(ReadReg2))));
+end if;
+  
   
 end process;
-  
-  
-  
-  
+ 
 end behavioral;
 
