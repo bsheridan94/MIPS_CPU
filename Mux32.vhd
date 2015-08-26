@@ -2,18 +2,18 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity Mux is 
+entity Mux32 is 
   generic(n: natural :=32);
   port(sel: in  STD_LOGIC;
        inA:in STD_LOGIC_VECTOR (n-1 downto 0);
        inB:in  STD_LOGIC_VECTOR (n-1 downto 0);
        output:out  STD_LOGIC_VECTOR (n-1 downto 0));
-    end Mux;
+    end Mux32;
     
     
-architecture behavioral of Mux is
+architecture behavioral of Mux32 is
   begin
-    output <= inA when (sel='1') else inB;
+    output <= inA when (sel='0') else inB;
   end behavioral;
   
   

@@ -12,7 +12,7 @@ entity Mux is
     
 architecture behavioral of Mux is
   begin
-    output <= inA when (sel='1') else inB;
+    output <= inA when (sel='0') else inB;
   end behavioral;
   
   
