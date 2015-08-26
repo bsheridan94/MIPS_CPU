@@ -1,9 +1,14 @@
 /home/brian/project/ECEC355/MipsCPU/Add4PC.vhd {0 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/Add4PC.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
-** Error: /home/brian/project/ECEC355/MipsCPU/Add4PC.vhd(2): (vcom-1491) Empty source files.
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MIPSCPU
+-- Compiling architecture Behavorial of Add4PC
+** Error: (vcom-11) Could not find work.add4pc.
+** Error: /home/brian/project/ECEC355/MipsCPU/Add4PC.vhd(11): VHDL Compiler exiting
 
-} {4.0 5.0} {}} /home/brian/project/ECEC355/MipsCPU/Registers.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/Registers.vhd
+} {8.0 10.0} {}} /home/brian/project/ECEC355/MipsCPU/Registers.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/Registers.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -39,7 +44,15 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling architecture Behavioral of InstructionMemory
 ** Error: /home/brian/project/ECEC355/MipsCPU/InstructionMemory.vhd(11): near "end": expecting BEGIN
 
-} {9.0 10.0} {}} /home/brian/project/ECEC355/MipsCPU/SignExtend.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/SignExtend.vhd
+} {9.0 10.0} {}} /home/brian/project/ECEC355/MipsCPU/MIPSCPU.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/MIPSCPU.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MIPSCPU
+-- Compiling architecture Behavorial of MIPSCPU
+
+} {} {}} /home/brian/project/ECEC355/MipsCPU/SignExtend.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/SignExtend.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -67,18 +80,14 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity Mux
 -- Compiling architecture behavioral of Mux
 
-} {} {}} /home/brian/project/ECEC355/MipsCPU/ALU.vhd {0 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/ALU.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
-** Error: /home/brian/project/ECEC355/MipsCPU/ALU.vhd(2): (vcom-1491) Empty source files.
-
-} {4.0 5.0} {}} /home/brian/project/ECEC355/MipsCPU/ShiftLeft2.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/ShiftLeft2.vhd
+} {} {}} /home/brian/project/ECEC355/MipsCPU/ALU.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/ALU.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity ShiftLeft2
--- Compiling architecture behavorial of ShiftLeft2
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU
+-- Compiling architecture Behavorial of ALU
 
 } {} {}} /home/brian/project/ECEC355/MipsCPU/And.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/And.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012

@@ -53,7 +53,7 @@ begin
         ALUOp(1) <= '0';
         ALUOP(0) <= '0';
 
-    -- BEQ Command optional
+    -- BEQ Command
       elsif Opcode = "000100" then
         RegDst <= 'X';
         Branch <= '1';

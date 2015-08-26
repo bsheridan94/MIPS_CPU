@@ -1,1 +1,28 @@
 
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
+
+entity Add4PC is
+  generic(n:natural:=32);
+  port(PC:in std_logic_vector(n-1 downto 0);
+   Output:out std_logic_vector(n-1 downto 0));
+end Add4PC;
+ 
+architecture Behavorial of Add4PC is
+  begin
+    
+-- process(PC)
+ -- variable temp:integer;
+ -- variable sum:integer;
+  
+--  begin
+   
+--  temp:=conv_integer(unsigned(PC));
+ -- sum:=temp+4;
+--  Output<=std_logic_vector(to_unsigned(sum, 32));
+    
+--  end process;
+  
+Output<=std_logic_vector( unsigned(PC) + 4 );
+end Behavorial;
