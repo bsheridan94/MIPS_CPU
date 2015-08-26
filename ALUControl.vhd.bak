@@ -35,6 +35,7 @@ case ALUOp is
 		    -- R type Set on less than
 		    when "101010" => ALUControl <= "0111";  
 	       when others => ALUControl <= "UUUU"; 
+	         end case;
 	when others => ALUControl <= "UUUU";
 end case;
 

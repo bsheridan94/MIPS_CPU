@@ -23,9 +23,9 @@ case ALUOp is
 	when "01" => ALUControl <= "0110";
 	-- Rtype
 	when "10" =>
-	   case ALUfunct is
+	    case ALUfunct is
 	      -- R type Add
-	     when "100000" => ALUControl <= "0010";
+	      when "100000" => ALUControl <= "0010";
 		    -- R type Subtract
 		    when "100010" => ALUControl <= "0110";
 		    -- R type AND
@@ -34,8 +34,8 @@ case ALUOp is
 		    when "100101" => ALUControl <= "0001";
 		    -- R type Set on less than
 		    when "101010" => ALUControl <= "0111";  
-	       when others => ALUControl <= "UUUU"; 
-	         end case;
+	      when others => ALUControl <= "UUUU"; 
+	      end case;
 	when others => ALUControl <= "UUUU";
 end case;
 

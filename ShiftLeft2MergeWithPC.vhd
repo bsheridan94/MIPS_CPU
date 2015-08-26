@@ -5,6 +5,7 @@ use IEEE.std_logic_1164.all;
 entity ShiftLeft2MergeWithPC is 
   generic(n:natural:=32);
   port(Input:in std_logic_vector(n-1 downto 0);
+	     PC: in std_logic_vector(n-1 downto 0);
 	     Output:out std_logic_vector(n-1 downto 0));
 end ShiftLeft2MergeWithPC;
 
@@ -16,4 +17,7 @@ begin
 tempIn <= to_bitvector(Input);
 tempOut <= tempIn sll 2;
 Output <= to_stdlogicvector(tempOut);  
+
+
+
 end behavorial;

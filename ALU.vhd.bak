@@ -1,19 +1,52 @@
-
 library ieee;
 use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.ALL;
+use IEEE.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
 
 entity ALU is
 generic(n:natural:=32);
 port(ReadData1,ReadData2:in std_logic_vector(n-1 downto 0);
-	  ALUOp:in std_logic_vector(3 downto 0);
+	  ALUControl:in std_logic_vector(3 downto 0);
 	  ALUResult:out std_logic_vector(n-1 downto 0);
 	  Zero:out std_logic);
  end ALU;
  
-
- 
 architecture Behavorial of ALU is
   
+begin
+
+process(ALUControl)
+  begin
+    
+case ALUControl is
+  
+  -- AND
+  when "0000" =>
+      ALUResult <= ReadData1 and ReadData2;
+  -- OR
+  when "0001" =>
+      ALUResult <= ReadData1 or ReadData2;
+  -- ADD
+  when "0010" =>
+      ALUResult <= ReadData1 + ReadData2;
+  -- SUB
+  when "0110" =>
+      ALUResult <= ReadData1 - ReadData2;
+  
+  -- SET ON LESS THAN
+  when "0111" =>
+      if(ReadData1<ReadData2) then
+          ALUResult <= "00000000000000000000000000000001";
+      else
+          ALUResult <= "00000000000000000000000000000000";
+      end if;
+  -- NOR  
+  when "1100" =>
+      ALUResult <= ReadData1 nor ReadData2;
+
+end case;
+
+  
+end process;
   
 end Behavorial; 
