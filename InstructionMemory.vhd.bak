@@ -3,8 +3,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_arith.ALL;
 
 entity InstructionMemory is
-port(Address:in std_logic_vector(31 downto 0);
-	ReadData:out std_logic_vector(31 downto 0));
+  generic(n:natural:=32);
+port(Address:in std_logic_vector(n-1 downto 0);
+	ReadData:out std_logic_vector(n-1 downto 0));
 end InstructionMemory;
 
 architecture Behavorial of InstructionMemory is
@@ -36,8 +37,9 @@ memoryArray(6)<="10101101000100110000000000001000";
 initialize:=0;
 end if;
 
-index := conv_integer(unsigned(Address));
+index := conv_integer(unsigned(Address))/4;
 ReadData<=memoryArray(index);
+report ReadData;
 end process P1;
 
 end Behavorial;

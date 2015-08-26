@@ -120,7 +120,7 @@ end component;
  -- Start making them signal and path jawns
  
   
-  signal PC_InstructionMem: STD_LOGIC_VECTOR(31 downto 0);
+  
   signal Instruction: STD_LOGIC_VECTOR(31 downto 0);
   signal WriteRegister: STD_LOGIC_VECTOR(4 downto 0);
   signal ReadData1:STD_LOGIC_VECTOR(31 downto 0);
@@ -129,6 +129,8 @@ end component;
   signal SignExtendToShiftLeft2:STD_LOGIC_VECTOR(31 downto 0);
   signal ShiftLeft2ToAdd:STD_LOGIC_VECTOR(31 downto 0);
   signal AddressFromJumpBranchMux:STD_LOGIC_VECTOR(31 downto 0);
+  
+  signal PC_InstructionMem: STD_LOGIC_VECTOR(31 downto 0);
   signal PCtoInstructMemory:STD_LOGIC_VECTOR(31 downto 0);
   signal PCPLus4:STD_LOGIC_VECTOR(31 downto 0);
   signal JumpAddress:STD_LOGIC_VECTOR(31 downto 0);
@@ -156,14 +158,13 @@ end component;
   
   
   begin
-    
-    InstructMem:InstructionMemory port map(PC_InstructionMem, Instruction);
+    P:PC port map(clk, AddressFromJumpBranchMux, PCtoInstructMemory );    
+    InstructMem:InstructionMemory port map(PCtoInstructMemory, Instruction);
     MuxReadReg2AndWriteReg:Mux port map(RegDst, Instruction(20 downto 16),Instruction(15 downto 11),WriteRegister);  
     Contrl:Control port map(Instruction(31 downto 26),RegDst,Branch,MemRead,MemtoReg,MemWrite,ALUSrc,RegWrite,Jump,ALUOp);
     Reg:Registers port map(clk, RegWrite, Instruction(25 downto 21), Instruction(20 downto 16), WriteRegister, ReadData1, ReadData2, WriteData);
     SignExt:SignExtend port map(Instruction(15 downto 0), SignExtendToShiftLeft2 );
     ShiftL2:ShiftLeft2 port map(SignExtendToShiftLeft2, ShiftLeft2ToAdd );    
-    P:PC port map(clk, AddressFromJumpBranchMux, PCtoInstructMemory );
     Add4:Add4PC port map(PCtoInstructMemory,PCPLus4);
     jmp:ShiftLeft2MergeWithPC port map(Instruction(25 downto 0),PCPLus4, JumpAddress);   
     Adder:Add port map(PCPLus4,ShiftLeft2ToAdd,AddALUResult);

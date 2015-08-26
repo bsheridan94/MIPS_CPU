@@ -37,8 +37,9 @@ memoryArray(6)<="10101101000100110000000000001000";
 initialize:=0;
 end if;
 
-index := conv_integer(unsigned(Address))/4;
+index := (conv_integer(unsigned(Address))/4);
 ReadData<=memoryArray(index);
+
 end process P1;
 
 end Behavorial;
