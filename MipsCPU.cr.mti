@@ -54,6 +54,15 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity Mux
 -- Compiling architecture behavioral of Mux
 
+} {} {}} /home/brian/project/ECEC355/MipsCPU/Control.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/Control.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Control
+-- Compiling architecture behavorial of Control
+
 } {} {}} /home/brian/project/ECEC355/MipsCPU/MIPSCPU.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/MIPSCPU.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -73,22 +82,15 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity SignExtend
 -- Compiling architecture behavorial of SignExtend
 
-} {} {}} /home/brian/project/ECEC355/MipsCPU/Control.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/Control.vhd
+} {} {}} /home/brian/project/ECEC355/MipsCPU/ALU.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/ALU.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity Control
--- Compiling architecture behavorial of Control
-
-} {} {}} /home/brian/project/ECEC355/MipsCPU/ShiftLeft2MergeWithPC.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/ShiftLeft2MergeWithPC.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity ShiftLeft2MergeWithPC
--- Compiling architecture behavorial of ShiftLeft2MergeWithPC
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ALU
+-- Compiling architecture Behavorial of ALU
 
 } {} {}} /home/brian/project/ECEC355/MipsCPU/Mux.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/Mux.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -97,6 +99,16 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package std_logic_1164
 -- Compiling entity Mux
 -- Compiling architecture behavioral of Mux
+
+} {} {}} /home/brian/project/ECEC355/MipsCPU/ALUControl.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/ALUControl.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity ALUControl
+-- Compiling architecture behavorial of ALUControl
 
 } {} {}} /home/brian/project/ECEC355/MipsCPU/PC.vhd {1 {vcom -work work -2002 -explicit /home/brian/project/ECEC355/MipsCPU/PC.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012

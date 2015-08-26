@@ -43,7 +43,8 @@ case ALUControl is
   -- NOR  
   when "1100" =>
       ALUResult <= ReadData1 nor ReadData2;
-
+  when others => ALUResult <= "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU";
+                              
 end case;
 
   
