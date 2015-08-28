@@ -47,9 +47,9 @@ case ALUControl is
 end case;
 
 if(ReadData1=ReadData2) then
-  Zero <=1;
+  Zero <='0';
 else
-  Zero <=0;
+  Zero <='1';
 end if;
   
 end process;

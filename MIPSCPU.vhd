@@ -3,7 +3,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity MIPSCPU is
-  port(clk:in std_logic; Overflow:out std_logic);
+  port(clk:in std_logic);
 end MIPSCPU;
 
 --This is where all the port mapping jawns are
@@ -130,7 +130,7 @@ end component;
   signal ShiftLeft2ToAdd:STD_LOGIC_VECTOR(31 downto 0);
   signal AddressFromJumpBranchMux:STD_LOGIC_VECTOR(31 downto 0);
   
-  signal PC_InstructionMem: STD_LOGIC_VECTOR(31 downto 0);
+  --signal PC_InstructionMem: STD_LOGIC_VECTOR(31 downto 0);
   signal PCtoInstructMemory:STD_LOGIC_VECTOR(31 downto 0);
   signal PCPLus4:STD_LOGIC_VECTOR(31 downto 0);
   signal JumpAddress:STD_LOGIC_VECTOR(31 downto 0);

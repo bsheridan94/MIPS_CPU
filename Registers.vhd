@@ -91,9 +91,21 @@ variable initialize:integer:=1;
 begin
   
   if(initialize=1) then
+  
+    --Part A
     regBank(t0) <= X"00000000";
-    regBank(s4) <= X"0000000e";
-    regBank(s5) <= X"00000005";
+    regBank(t1) <= X"00000000";
+    regBank(t2) <= X"00000000";
+    regBank(t3) <= X"00000000";
+    
+    regBank(s0) <= X"00000000";
+    regBank(s1) <= X"00000000";
+    regBank(s3) <= X"00000000";
+    regBank(s4) <= X"00000000";
+    regBank(s5) <= X"00000000";
+
+    
+    
     initialize:=0;
   end if;
     
